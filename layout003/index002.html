@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout002</title>
+	<!-- <link rel="stylesheet" type="text/css" href="./../base/reset.css"> -->
+	<style type="text/css">
+	.page-normal{
+		color: #ff6500;
+		text-align: center;
+		font-size:0;
+	}
+
+
+    .page-normal .page-prev, .page-normal .page-current, .page-normal a{
+    	padding: 5px 7px;
+			font-size: 18px;
+			margin-left: 10px;
+    }
+
+		.page-normal a {
+			border: 1px solid #FF9600;
+			color: #ff6500;
+			text-decoration: none;
+		}
+
+		.page-normal a:hover{
+			border: 1px solid #ff6500;
+ 			background: #ffbe94
+		}
+
+		.page-normal .page-current {
+ 			border: 1px solid #ff6500;
+ 		
+ 			color: #ff6500;
+ 			background: #ffbe94;
+ 			
+		}
+		.page-normal .page-prev {
+			border: 1px solid #ff6500;
+	
+		}
+		.page-normal i{
+			display: inline-block;
+			width:7px;
+			height:17px;
+			background: url(./../img/example2.jpg);
+			background-position: 180px 125px;
+			margin-right: 5px;
+		}
+		.page-normal .page-next i{
+			display: inline-block;
+			width:7px;
+			height:17px;
+			background: url(./../img/example2.jpg);
+			background-position: 170px 125px;
+			margin-left: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="page-normal">
+		<span class="page-prev"><i></i>上一页</span>
+		<span class="page-current">1</span>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+		<a href="#">6</a>
+		<a href="#">7</a>
+		...
+		<a href="#">199</a>
+		<a href="#">200</a>
+		<a href="#" class="page-next">下一页<i></i></a>
+	</div>
+</body>
+<script type="text/javascript">
+	setInterval(function(){
+		location.reload()
+	},2000)
+</script>
+</html>

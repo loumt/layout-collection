@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout001</title>
+	<link rel="stylesheet" type="text/css" href="./../base/reset.css">
+	<style type="text/css">
+	.demo001{
+		width: 600px;
+		position: relative;
+		overflow: hidden;
+	}
+	.demo001 .left{
+       width: 100px;
+       float: left;
+	}
+	.demo001 .left img{margin-left:  20px;}
+	.demo001 .right{
+		padding: 20px;
+		width: 458px;
+		float: right;
+		background: #9CF;
+		border: 1px solid #ccc
+	}
+	.demo001 .right span{
+		position: absolute;
+		right: 20px;
+		top: 10px;
+		font-size: 12px;
+	}
+		.icon-img{
+			width: 50px;
+			height: 50px;
+		}
+	</style>
+	<style type="text/css">
+	.demo002{
+		width: 600px;
+		position: relative;
+		overflow: hidden;
+	}
+		.demo002 img{
+			float: left;
+			margin-left: 20px;
+		}
+		.demo002 .right{
+		padding: 20px;
+		width: 458px;
+		float: right;
+		background: #9CF;
+		border: 1px solid #ccc
+	}
+	.demo002 .right span{
+		position: absolute;
+		right: 20px;
+		top: 10px;
+		font-size: 12px;
+	}
+	.demo002 .right p {
+		font-size: 12px;
+		line-height: 25px;
+	}
+	</style>
+	<style type="text/css">
+	/*.demo003{
+		width: 600px;
+		position: relative;
+		overflow: hidden;
+	}
+		.demo003 img{
+			float: left;
+			margin-left: 20px;
+		}
+		.demo003{
+		padding: 20px;
+		width: 458px;
+		float: right;
+		background: #9CF;
+		border: 1px solid #ccc
+	}
+	.demo003  span{
+		position: absolute;
+		right: 20px;
+		top: 10px;
+		font-size: 12px;
+	}*/
+	.demo003{
+		position: relative;
+		width: 458px;
+		padding: 20px;
+		margin-left: 100px;
+		background: #9CF;
+		border: 1px solid #ccc
+	}
+	.demo003 img{
+		float: left;
+		margin: -20px 0px 0px -100px;
+	}
+	.demo003  span{
+		position: absolute;
+		right: 20px;
+		top: 10px;
+		font-size: 12px;
+	}
+	.demo003  span{
+		position: absolute;
+		right: 20px;
+		top: 10px;
+		font-size: 12px;
+	}
+	.demo003  p {
+		font-size: 12px;
+		line-height: 25px;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="demo001">
+		<div class="left">
+			<img class="icon-img" src="./../img/3.jpg"/>
+		</div>
+		<div class="right">
+			
+			<h6>樱桃小丸子</h6>
+			<p>Vue可能有些方面是不如React，不如Angular，但它是渐进的，没有强主张，你可以在原有大系统的上面，把一两个组件改用它实现，当jQuery用；也可以整个用它全家gular已。</p>
+			<span>10分钟之前</span>
+		</div>
+	</div>
+	<br><br>
+	
+	<div class="demo002">
+			<img class="icon-img" src="./../img/3.jpg"/>
+		<div class="right">
+			
+			<h6>樱桃小丸子</h6>
+			<p>Vue可能有些方面是不如React，不如Angular，但它是渐进的，没有强主张，你可以在原有大系统的上面，把一两个组件改用它实现，当jQuery用；也可以整个用它全家桶React，不如量视图而已，只做了自己该做的事，没有做不该做的事，仅此而已。</p>
+			<span>10分钟之前</span>
+		</div>
+	</div>
+	<br><br>
+	
+	<div class="demo003">
+			<img class="icon-img" src="./../img/3.jpg"/>
+			<h6>樱桃小丸子</h6>
+			<p>Vue可能有些方面是不如React，不如Angular，但它是渐进的，没有强主张，你可以在原有大系统的上面，把一两个组件改用它实现，当jQuery用；也可以整个用它全家桶React，不如量视图而已，只做了自己该做的事，没有做不该做的事，仅此而已。</p>
+			<span>10分钟之前</span>
+	</div>
+</body>
+<script type="text/javascript">
+	setInterval(function(){
+		location.reload()
+	},2000)
+</script>
+</html>
+
+

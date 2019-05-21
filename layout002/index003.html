@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout003</title>
+	<!-- <link rel="stylesheet" type="text/css" href="./../base/reset.css"> -->
+	<style type="text/css">
+		*{
+			margin:0px;
+			 padding: 0px;
+			 font-size:14px;
+		}
+
+		ul{
+			list-style:none;
+			/*width: 100px;*/
+			height: 50px;
+			padding-left: 30px;
+			border-bottom: 5px solid #F60;
+		}
+		li{
+			margin-top: 20px;
+			float: left;
+			width: 100px;
+		}
+		a{
+			text-decoration: none;
+			display: block;
+			height:30px;
+			line-height:30px;
+			background-color: #ccc;
+			margin-bottom: 1px; 
+			text-indent: 10px;
+			text-align: center;
+			background: url(./../img/menu.png);
+		}
+		.on,a:hover{
+			background-color: #f60;
+			 color:#fff;
+			 background-position: 0 -40px;
+			}
+
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a class="on" href="">首页111</a></li>
+		<li><a href="">个人说明</a></li>			
+		<li><a href="">产品展示</a></li>
+		<li><a href="">售后服务</a></li>
+		<li><a href="">联系我们</a></li>				
+	</ul>
+
+</body>
+<script type="text/javascript">
+	setInterval(function(){
+		location.reload()
+	},2000)
+</script>
+</html>
