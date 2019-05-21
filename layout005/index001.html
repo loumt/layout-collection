@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>layout001</title>
+	<link rel="stylesheet" href="./../base/reset.css">
+	<style>
+		body{
+			font: 12px/22px "微软雅黑";
+		}
+		.type{
+			width: 400px;
+			height: 32px;
+			border: 1px solid #DFDFDF;
+			margin: 30px auto;
+		}
+		a{
+			color: #000;
+			text-decoration: none;
+		}
+		.type dl{
+			height: 32px;
+			line-height: 32px;
+			border: 1px dashed #FF6500;
+		}
+		.type dt{
+			float: left;
+			margin-right: 10px;
+		}
+		.type dd{
+			float: left;
+			margin: 0px 10px 8px 0px;
+		}
+		.type dd a {
+			display: block;
+			position: relative;
+			padding-left: 23px;
+		}
+		.type dd b{
+			width: 20px;
+			height: 20px;
+			background: #666;
+			display: block;
+			position: absolute;
+			top:6px;
+			left: 0px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="type">
+		<h5>Hello!</h5>	<hr>
+
+	<form action="#" method="post" name="typeForm">
+		<label>配送类型</label>
+		<input type="radio" name="type" checked="checked"><label>全部</label>
+		<input type="radio" name="type"><label>京东配送</label>
+		<input type="radio" name="type"><label>第三方配送</label>
+	</form>
+
+	<hr>
+
+	<dl>
+		<dt>配送类型:</dt>
+		<dd><a href="#"><b></b>全部</a></dd>
+		<dd><a href="#"><b></b>京东配送</a></dd>
+		<dd><a href="#"><b></b>第三方配送</a></dd>
+	</dl>
+	</div>
+	
+</body>
+<script type="text/javascript">
+	setInterval(function(){
+		location.reload()
+	},5000)
+</script>
+</html>
